@@ -25,18 +25,18 @@
         color: #857769
       }
       .new {
-        margin-top: 50pt;
-        text-align: right;
+        margin: 50pt;
+        text-align: center;
         font-size:10pt;
       }
       .source {
         margin-top: 10pt;
-        text-align: right;
+        text-align: center;
         font-size:7pt;
       }
       .fauna {
         margin-top: 10pt;
-        text-align: right;
+        text-align: center;
         font-size:12pt;
       }
 
@@ -62,7 +62,7 @@
     <div class="header">
       <div class="title"> </div>
       <div class="new"><a href="javascript:set()">get me a new one</a></div>
-      <div class="fauna">Brought to you by the fine folks at <a target="_blank" href="http://fauna.com">FaunaDB</a>: a Consistent database with an FQL interface for easy access to our distributed storage, based on our performant implementation of Calvin & Raft, written in Scala. ;-)</div>
+      <div class="fauna">Brought to you by the fine folks at <a target="_blank" href="http://fauna.com">FaunaDB</a>: the globally distributed, transactional database with a document-relational query engine, based on an optimized implementation of Calvin & RAFT in Scala.</div>
       <div class="source">inspired by <a target="_blank" href="http://github.com/joom/type.systems">type.systems</a></div>
     </div>
     <script>
@@ -92,37 +92,37 @@
       var consistencyModel = [
         ["PRAM", "https://www.cs.princeton.edu/research/techreps/TR-180-88"],
         ["Highly Available Transactions", "http://www.bailis.org/papers/hat-hotos2013.pdf"],
-        ["Serializable", "https://www.ics.forth.gr/tech-reports/2013/2013.TR439_Survey_on_Consistency_Conditions.pdf"],
-        ["Sequentially Consistent", "https://www.ics.forth.gr/tech-reports/2013/2013.TR439_Survey_on_Consistency_Conditions.pdf"],
+        ["serializable", "https://www.ics.forth.gr/tech-reports/2013/2013.TR439_Survey_on_Consistency_Conditions.pdf"],
+        ["sequentially consistent", "https://www.ics.forth.gr/tech-reports/2013/2013.TR439_Survey_on_Consistency_Conditions.pdf"],
         ["Virtual World Consistency", "https://www.ics.forth.gr/tech-reports/2013/2013.TR439_Survey_on_Consistency_Conditions.pdf"],
-        ["Eventually Consistent", "https://en.wikipedia.org/wiki/Eventual_consistency"],
+        ["eventually consistent", "https://en.wikipedia.org/wiki/Eventual_consistency"],
         ["CAP", "https://en.wikipedia.org/wiki/CAP_theorem"],
         ["PACELC", "https://en.wikipedia.org/wiki/PACELC_theorem"]
       ]
 
       var queryLanguage = [
-        [".QL", "https://en.wikipedia.org/wiki/.QL"],
-        ["JPQL", 'https://en.wikipedia.org/wiki/Java_Persistence_Query_Language'],
-        ["AQL", "https://en.wikipedia.org/wiki/Access_query_language"],
-        ["Cypher Query Language", "https://en.wikipedia.org/wiki/Cypher_Query_Language"],
-        ["HTSQL", "https://en.wikipedia.org/wiki/HTSQL"],
-        ["OQL", "https://en.wikipedia.org/wiki/Object_Query_Language"],
-        ["MQL", "https://en.wikipedia.org/wiki/Molecular_Query_Language"],
-        ["LINQ", "https://en.wikipedia.org/wiki/Language_Integrated_Query"],
-        ["LDAP", "https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol"],
-        ["MDX", "https://en.wikipedia.org/wiki/MultiDimensional_eXpressions"],
-        ["OCL", "https://en.wikipedia.org/wiki/Object_Constraint_Language"],
-        ["DMX", "https://en.wikipedia.org/wiki/Data_Mining_Extensions"],
-        ["Datalog", "https://en.wikipedia.org/wiki/Datalog"],
-        ["QUEL", "https://en.wikipedia.org/wiki/QUEL_query_languages"],
-        ["SMARTS", "https://en.wikipedia.org/wiki/SMILES_arbitrary_target_specification"],
-        ["AQL", "https://specifications.openehr.org/releases/QUERY/latest/AQL.html"],
-        ["RDF Query Language", "https://en.wikipedia.org/wiki/RDF_query_language"],
-        ["XPath", "https://en.wikipedia.org/wiki/XPath"],
-        ["F-logic", "https://en.wikipedia.org/wiki/F-logic"],
-        ["Gremlin", "https://en.wikipedia.org/wiki/Gremlin_(programming_language)"],
-        ["HTSQL", "https://en.wikipedia.org/wiki/HTSQL"],
-        ["GraphQL", "https://graphql.org/"]
+        ["a", ".QL", "https://en.wikipedia.org/wiki/.QL"],
+        ["a", "JPQL", 'https://en.wikipedia.org/wiki/Java_Persistence_Query_Language'],
+        ["an", "AQL", "https://en.wikipedia.org/wiki/Access_query_language"],
+        ["a", "Cypher Query Language", "https://en.wikipedia.org/wiki/Cypher_Query_Language"],
+        ["a", "HTSQL", "https://en.wikipedia.org/wiki/HTSQL"],
+        ["an",  "OQL", "https://en.wikipedia.org/wiki/Object_Query_Language"],
+        ["a", "MQL", "https://en.wikipedia.org/wiki/Molecular_Query_Language"],
+        ["a", "LINQ", "https://en.wikipedia.org/wiki/Language_Integrated_Query"],
+        ["an LDAP", "https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol"],
+        ["an", "MDX", "https://en.wikipedia.org/wiki/MultiDimensional_eXpressions"],
+        ["an",  "OCL", "https://en.wikipedia.org/wiki/Object_Constraint_Language"],
+        ["a", "DMX", "https://en.wikipedia.org/wiki/Data_Mining_Extensions"],
+        ["a", "Datalog", "https://en.wikipedia.org/wiki/Datalog"],
+        ["a", "QUEL", "https://en.wikipedia.org/wiki/QUEL_query_languages"],
+        ["a", "SMARTS", "https://en.wikipedia.org/wiki/SMILES_arbitrary_target_specification"],
+        ["an",  "AQL", "https://specifications.openehr.org/releases/QUERY/latest/AQL.html"],
+        ["an", "RDF", "https://en.wikipedia.org/wiki/RDF_query_language"],
+        ["a", "XPath", "https://en.wikipedia.org/wiki/XPath"],
+        ["a", "F-logic", "https://en.wikipedia.org/wiki/F-logic"],
+        ["a", "Gremlin", "https://en.wikipedia.org/wiki/Gremlin_(programming_language)"],
+        ["an", "HTSQL", "https://en.wikipedia.org/wiki/HTSQL"],
+        ["a", "GraphQL", "https://graphql.org/"]
       ]
 
       var consensusProtocol = [
@@ -143,13 +143,14 @@
       var qualifier = [
           "transactional",
           "highly-available",
-          "ACID Capable",
+          "ACID-capable",
           "proto-ACID",
-          "reliable",
-          "graph",
+          "resilient",
+          "global",
+          "graph-oriented",
           "temporal",
-          "object oriented",
-          "GDPR enabled",
+          "object-oriented",
+          "GDPR-enabled",
           "fault-tolerant"
       ];
 
@@ -168,16 +169,22 @@
         "Miranda",
         "Eiffel",
         "COBOL",
-        "bash"
+        "Bash"
       ]
 
       const pick = list => list[Math.floor(Math.random() * list.length)];
-      const link = pair => pair[1] !== "" ? `<a target="_blank" href="${pair[1]}">${pair[0]}</a>` : pair[0];
+      const link = pair => ((pair.length == 3) ?
+        `${pair[0]} <a target="_blank" href="${pair[2]}">${pair[1]}</a>`
+      : ((pair.length == 2) ?
+        `<a target="_blank" href="${pair[1]}">${pair[0]}</a>`
+      :
+        pair[0]
+      ))
       const put = list => link(pick(list));
       const set = () => {
         let sometimes = Math.random() < 0.8;
-        let someQualifier = sometimes ? `${pick(qualifier)} ` : ""
-        document.querySelector('.title').innerHTML = `${pick(names)}DB: a ${put(consistencyModel)} database with a ${put(queryLanguage)} interface to our distributed ${someQualifier}storage, based on our performant implementation of ${put(consensusProtocol)}, written in ${pick(programmingLanguages)}.`;
+        let someQualifier = sometimes ? `${pick(qualifier)}, ` : ""
+        document.querySelector('.title').innerHTML = `${pick(names)}DB: the ${someQualifier}${put(consistencyModel)} database with ${put(queryLanguage)} query engine, based on an optimized implementation of ${put(consensusProtocol)} in ${pick(programmingLanguages)}.`;
       };
       set();
     </script>
